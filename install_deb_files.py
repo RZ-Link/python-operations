@@ -2,13 +2,13 @@ import os
 import subprocess
 
 current_directory = os.getcwd()
-print('当前目录', current_directory)
+print('当前工作目录', current_directory)
 
 items = os.listdir(current_directory)
-print('当前目录全部文件', items)
+print('当前工作目录全部文件', items)
 
 items = [item for item in items if item.endswith('.deb')]
-print('当前目录deb文件', items)
+print('当前工作目录deb文件', items)
 
 queue = []
 while True:
